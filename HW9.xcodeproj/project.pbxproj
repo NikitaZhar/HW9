@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		5320FC6025E7D45C00F9D4DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5320FC5E25E7D45C00F9D4DD /* Main.storyboard */; };
 		5320FC6225E7D45F00F9D4DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5320FC6125E7D45F00F9D4DD /* Assets.xcassets */; };
 		5320FC6525E7D45F00F9D4DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5320FC6325E7D45F00F9D4DD /* LaunchScreen.storyboard */; };
+		5320FC7825E8041E00F9D4DD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5320FC7725E8041E00F9D4DD /* Model.swift */; };
+		D7C85005BE44AD84B484F5EA /* Pods_HW9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B8DFC618C7FD16FA713819 /* Pods_HW9.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E57439F1B0E36BA01BE8F86 /* Pods-HW9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW9.release.xcconfig"; path = "Target Support Files/Pods-HW9/Pods-HW9.release.xcconfig"; sourceTree = "<group>"; };
 		5320FC5525E7D45B00F9D4DD /* HW9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5320FC5825E7D45B00F9D4DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5320FC5A25E7D45B00F9D4DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		5320FC6125E7D45F00F9D4DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5320FC6425E7D45F00F9D4DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5320FC6625E7D45F00F9D4DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5320FC7725E8041E00F9D4DD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		86B8DFC618C7FD16FA713819 /* Pods_HW9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BA9D9EEDE990CED31C9333 /* Pods-HW9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW9.debug.xcconfig"; path = "Target Support Files/Pods-HW9/Pods-HW9.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C85005BE44AD84B484F5EA /* Pods_HW9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021D4995CEC608B041293833 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2BA9D9EEDE990CED31C9333 /* Pods-HW9.debug.xcconfig */,
+				4E57439F1B0E36BA01BE8F86 /* Pods-HW9.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5320FC4C25E7D45B00F9D4DD = {
 			isa = PBXGroup;
 			children = (
 				5320FC5725E7D45B00F9D4DD /* HW9 */,
 				5320FC5625E7D45B00F9D4DD /* Products */,
+				021D4995CEC608B041293833 /* Pods */,
+				BF64139DFC434B7CAF577DE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +77,21 @@
 				5320FC5825E7D45B00F9D4DD /* AppDelegate.swift */,
 				5320FC5A25E7D45B00F9D4DD /* SceneDelegate.swift */,
 				5320FC5C25E7D45B00F9D4DD /* ViewController.swift */,
+				5320FC7725E8041E00F9D4DD /* Model.swift */,
 				5320FC5E25E7D45C00F9D4DD /* Main.storyboard */,
 				5320FC6125E7D45F00F9D4DD /* Assets.xcassets */,
 				5320FC6325E7D45F00F9D4DD /* LaunchScreen.storyboard */,
 				5320FC6625E7D45F00F9D4DD /* Info.plist */,
 			);
 			path = HW9;
+			sourceTree = "<group>";
+		};
+		BF64139DFC434B7CAF577DE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86B8DFC618C7FD16FA713819 /* Pods_HW9.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5320FC6925E7D45F00F9D4DD /* Build configuration list for PBXNativeTarget "HW9" */;
 			buildPhases = (
+				F7AFF7A56E515F46BE2598F9 /* [CP] Check Pods Manifest.lock */,
 				5320FC5125E7D45B00F9D4DD /* Sources */,
 				5320FC5225E7D45B00F9D4DD /* Frameworks */,
 				5320FC5325E7D45B00F9D4DD /* Resources */,
+				D00CD3E16D7DCEBEF90FDBD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D00CD3E16D7DCEBEF90FDBD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HW9/Pods-HW9-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HW9/Pods-HW9-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HW9/Pods-HW9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7AFF7A56E515F46BE2598F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HW9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5320FC5125E7D45B00F9D4DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 				5320FC5D25E7D45B00F9D4DD /* ViewController.swift in Sources */,
 				5320FC5925E7D45B00F9D4DD /* AppDelegate.swift in Sources */,
 				5320FC5B25E7D45B00F9D4DD /* SceneDelegate.swift in Sources */,
+				5320FC7825E8041E00F9D4DD /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +355,7 @@
 		};
 		5320FC6A25E7D45F00F9D4DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2BA9D9EEDE990CED31C9333 /* Pods-HW9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +369,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NikitaZharinov.HW9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5320FC6B25E7D45F00F9D4DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E57439F1B0E36BA01BE8F86 /* Pods-HW9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NikitaZharinov.HW9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
