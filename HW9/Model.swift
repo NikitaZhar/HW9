@@ -4,6 +4,7 @@
 //
 //  Created by Nikita Zharinov on 25/02/2021.
 //
+
 struct TypeAnimation {
     let nameAnimation: String
     let curve: String
@@ -28,7 +29,7 @@ extension TypeAnimation {
     }
 }
 
-//MARK: - Get types of animation and cuyrves from DB
+//MARK: - Get types of animation and cuyrves
 class AnimationName {
     let animationName = ["shake", "pop", "flash", "wobble", "fall", "morph", "swing"]
     let curveType = ["spring", "easeIn", "easeOut"]

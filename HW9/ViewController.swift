@@ -9,16 +9,16 @@ import Spring
 
 class ViewController: UIViewController {
     
-    var animation: TypeAnimation!
-    var buttonPressed = false
-    
     @IBOutlet var animationLabel: UILabel!
     @IBOutlet var curveLabel: UILabel!
     @IBOutlet var forceLabel: UILabel!
     @IBOutlet var delayLabel: UILabel!
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var springAnimatedView: SpringView!
-
+    
+    var animation: TypeAnimation!
+    var buttonPressed = false
+    
     @IBAction func animationButton(_ sender: SpringButton) {
         if !buttonPressed {
             buttonPressed.toggle()
